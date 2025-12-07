@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>📚 Study Planner</h1>
+
+    <form id="taskForm">
+        <input type="text" id="subject" placeholder="Subject" required>
+        <input type="text" id="description" placeholder="Description" required>
+        <input type="date" id="dueDate" required>
+        <select id="priority">
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+        </select>
+        <button type="submit">Add Task</button>
+    </form>
+
+    <h2>Tasks</h2>
+    <table id="taskTable">
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Description</th>
+                <th>Due Date</th>
+                <th>Priority</th>
+                <th>Completed</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
