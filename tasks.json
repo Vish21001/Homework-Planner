@@ -1,0 +1,43 @@
+    {
+        "subject": "Algebra 2",
+        "description": "Finish Algebra homework:",
+        "dueDate": "2025-12-8",
+        "priority": "High",
+        "completed": true
+    },
+    {
+        "subject": "English 9",
+        "description": "Read chapter 1",
+        "dueDate": "2025-12-8",
+        "priority": "Medium",
+        "completed": false
+    },
+    {
+        "subject": "Geometry",
+        "description": "Basic Triangle Congruence Proofs",
+        "dueDate": "2025-12-8",
+        "priority": "High",
+        "completed": false
+    }
+    {
+      "subject": "World History",
+      "description": "12.3 - Section Review"
+      "dueDate": "2025-12-9",
+      "priority":"Medium"
+      "completed":false
+    }
+    {
+      "subject": "Integrated Chemistry and Earth Science",
+      "description": "4.4 Faults"
+      "dueDate": "2025-12-9",
+      "priority":"Medium"
+      "completed":false
+    }
+    {
+      "subject": "Spanish 3"
+      "description":"Deep Blue"
+      "dueDate": "2925-12-9"
+      "priority":"Medium"
+      "completed":false
+    }
+]
