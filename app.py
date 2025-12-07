@@ -1,11 +1,11 @@
-rom flask import Flask, render_template, request, jsonify
 import json
 import os
+from flask import Flask, render_template, request, jsonify
 
 app = Flask(__name__)
 TASKS_FILE = "tasks.json"
 
-# Load tasks
+# Load tasks on startup
 if os.path.exists(TASKS_FILE):
     with open(TASKS_FILE, "r") as f:
         tasks = json.load(f)
@@ -23,10 +23,10 @@ def index():
 @app.route("/tasks", methods=["GET", "POST", "PUT", "DELETE"])
 def handle_tasks():
     global tasks
+    data = request.get_json()  # data sent from JS
     if request.method == "GET":
         return jsonify(tasks)
-    data = request.get_json()
-    if request.method == "POST":
+    elif request.method == "POST":
         tasks.append(data)
     elif request.method == "PUT":
         idx = data["index"]
